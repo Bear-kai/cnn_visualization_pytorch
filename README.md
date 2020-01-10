@@ -59,7 +59,7 @@ All scripts prefixed with 'my_' are implemented or re-implemented by myself. The
         - my_outfeat_saliency_vis.py -- 生成特定输出层特征的显著性图 [Recommend] 
         - my_midfeat_saliency_vis.py -- 生成特定中间层特征的显著性图 [Recommend]
         - layer_activation_with_guided_backprop.py -- 生成特定中间层特征的显著性图，同上
-    - GradCAM and its variants  
+    - GradCAM and its variants ( my_***.py can be considered as an example to show how to adapt to our own model )  
         - my_gradcam.py [Recommend]
         - my_guided_backprop.py  [Recommend]  
         - my_guided_gradcam.py -- 上述两者组合 [Recommend]  

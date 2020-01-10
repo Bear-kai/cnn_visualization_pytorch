@@ -3,29 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1b4c498-75d5-4b76-af66-bcc7b81f1a47" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cnn_layer_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/cnn_layer_visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deep_dream.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/deep_dream.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generate_class_specific_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/generate_class_specific_samples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grad_times_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/grad_times_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/gradcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guided_backprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/guided_backprop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guided_gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/guided_gradcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/hook_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/integrated_gradients.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/integrated_gradients.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inverted_representation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/inverted_representation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layer_activation_with_guided_backprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/layer_activation_with_guided_backprop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/misc_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_class_model_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_class_model_vis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_class_saliency_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_class_saliency_vis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_gradcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_guided_backprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_guided_backprop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_guided_gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_guided_gradcam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_midfeat_saliency_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_midfeat_saliency_vis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_outfeat_saliency_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_outfeat_saliency_vis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/my_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/smooth_grad.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/smooth_grad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vanilla_backprop.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_1/vanilla_backprop.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,9 +36,9 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="621">
-                <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="575">
+                <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
               </first_editor>
               <second_editor />
             </state>
@@ -150,7 +127,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -385,37 +362,43 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string />
+        <expression-string>img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>import cv2
+img2 = cv2.imread(img_path)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>img1 = np.array(orig_img)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>img2 = preprocess1(img1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>preprocess1 = transforms.Compose([transforms.ToPILImage(),             transforms.Resize(size=img_size),
+   transforms.ToTensor(),
+   transforms.Normalize(mean=val, std=val)])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>import cv2
+img1 = cv2.imread(img_path)
+img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>if type(m) in [nn.Conv2d]:
+    print('yes')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -815,9 +798,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="621">
-            <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="575">
+            <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
           </first_editor>
           <second_editor />
         </state>
