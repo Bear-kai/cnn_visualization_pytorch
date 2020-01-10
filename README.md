@@ -39,6 +39,7 @@ This repository is built based on an open sourced github project and my own impl
 
 #### Notes of src_1
 All scripts prefixed with 'my_' are implemented or re-implemented by myself. The scripts can be grouped as follows: 
+
 1. generate image by several backward steps
     - several 'continous' backwards
         - my_class_model_vis.py -- 类别的生成图
@@ -49,6 +50,7 @@ All scripts prefixed with 'my_' are implemented or re-implemented by myself. The
     - sereral 'one' backwards
         - integrated_gradients.py
         - smooth_grad.py
+
 2. generate saliency map by one backward step
 
     - class and feature saliency      
@@ -64,6 +66,7 @@ All scripts prefixed with 'my_' are implemented or re-implemented by myself. The
         - gradcam.py  
         - guided_gradcam.py
         - guided_gradcam.py -- 上述gradcam和guided_gradcam的组合
+
 3. others
     - grad_times_images.py  -- 若干计算显著性图方法的“应用”
 
