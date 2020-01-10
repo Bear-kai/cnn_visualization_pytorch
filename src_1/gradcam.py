@@ -9,7 +9,7 @@ https://arxiv.org/abs/1610.02391
 from PIL import Image
 import numpy as np
 import torch
-from src.misc_functions import get_example_params, save_class_activation_images
+from src_1.misc_functions import get_example_params, save_class_activation_images
 
 
 class CamExtractor():

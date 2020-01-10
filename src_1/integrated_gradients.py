@@ -8,7 +8,7 @@ https://arxiv.org/abs/1703.01365
 """
 import torch
 import numpy as np
-from src.misc_functions import get_example_params, convert_to_grayscale, save_gradient_images
+from src_1.misc_functions import get_example_params, convert_to_grayscale, save_gradient_images
 
 
 class IntegratedGradients():

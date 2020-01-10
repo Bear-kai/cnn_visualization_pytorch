@@ -1,12 +1,12 @@
 import numpy as np
 import torch
-from src.misc_functions import save_class_activation_images
+from src_1.misc_functions import save_class_activation_images
 # import cv2
 from PIL import Image
 import torchvision.transforms as transforms
 from backbone.my_model_irse import IR_50
 from head.airface import AirFace
-from src.my_utils import load_pth_model
+from src_1.my_utils import load_pth_model
 
 
 class CamExtractor():

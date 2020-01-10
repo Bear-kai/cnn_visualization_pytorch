@@ -1,6 +1,6 @@
 import torch
 from backbone.my_model_irse import IR_50
-from src.my_utils import load_pth_model, read_imgs, saliency_imgs_vis, saliency_vis_square
+from src_1.my_utils import load_pth_model, read_imgs, saliency_imgs_vis, saliency_vis_square
 
 
 def out_feat_sali_1C(backbone, imgs, device, idx=0):

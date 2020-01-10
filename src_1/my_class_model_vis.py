@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 from backbone.my_model_irse import IR_50
 from head.airface import AirFace
-from src.my_utils import load_pth_model, postprocess
+from src_1.my_utils import load_pth_model, postprocess
 
 
 def class_model_vis(backbone,head, y, device,lam=5,p=2,epoch=450,lr=0.1,posterior=False,save_path=''):

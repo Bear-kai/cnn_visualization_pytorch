@@ -1,7 +1,7 @@
 import torch
 from backbone.my_model_irse import IR_50
 from head.airface import AirFace
-from src.my_utils import load_pth_model, read_imgs, saliency_imgs_vis, saliency_vis_square
+from src_1.my_utils import load_pth_model, read_imgs, saliency_imgs_vis, saliency_vis_square
 
 
 def class_saliency_vis(backbone,head,imgs,labels,device,posterior=False):

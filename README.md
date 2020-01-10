@@ -42,7 +42,7 @@ All scripts prefixed with 'my_' are implemented or re-implemented by myself. The
 
 1. generate image by several backward steps
     - several 'continous' backwards
-        - my_class_model_vis.py -- 类别的生成图
+        - my_class_model_vis.py -- 类别的生成图 [Recommend]
         - generate_class_specific_samples.py -- 类别的生成图，同上  
         - cnn_layer_visualization.py -- 特征的生成图，初始输入随机/全零  
         - deep_dream.py -- 特征的生成图，初始输入为自然图像
@@ -53,21 +53,21 @@ All scripts prefixed with 'my_' are implemented or re-implemented by myself. The
 
 2. generate saliency map by one backward step
 
-    - class and feature saliency      
-        - my_class_saliency_vis.py -- 生成特定类别的显著性图    
+    - class and feature saliency     
+        - my_class_saliency_vis.py -- 生成特定类别的显著性图 [Recommend]   
         - vanilla_backprop.py -- 生成特定类别的显著性图，同上
-        - my_outfeat_saliency_vis.py -- 生成特定输出层特征的显著性图  
-        - my_midfeat_saliency_vis.py -- 生成特定中间层特征的显著性图
+        - my_outfeat_saliency_vis.py -- 生成特定输出层特征的显著性图 [Recommend] 
+        - my_midfeat_saliency_vis.py -- 生成特定中间层特征的显著性图 [Recommend]
         - layer_activation_with_guided_backprop.py -- 生成特定中间层特征的显著性图，同上
     - GradCAM and its variants  
-        - my_gradcam.py 
-        - my_guided_backprop.py    
-        - my_guided_gradcam.py -- 上述my_gradcam和my_guided_backprop的组合   
+        - my_gradcam.py [Recommend]
+        - my_guided_backprop.py  [Recommend]  
+        - my_guided_gradcam.py -- 上述两者组合 [Recommend]  
         - gradcam.py  
         - guided_gradcam.py
-        - guided_gradcam.py -- 上述gradcam和guided_gradcam的组合
+        - guided_gradcam.py -- 上述两者组合
 
-3. others
+3. others    
     - grad_times_images.py  -- 若干计算显著性图方法的“应用”
 
 4. utilities and test scripts

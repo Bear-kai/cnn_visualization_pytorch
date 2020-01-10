@@ -8,10 +8,10 @@ https://arxiv.org/abs/1412.6806
 """
 import torch
 from torch.nn import ReLU
-from src.misc_functions import (get_example_params,
-                            convert_to_grayscale,
-                            save_gradient_images,
-                            get_positive_negative_saliency)
+from src_1.misc_functions import (get_example_params,
+                                  convert_to_grayscale,
+                                  save_gradient_images,
+                                  get_positive_negative_saliency)
 
 
 class GuidedBackprop():

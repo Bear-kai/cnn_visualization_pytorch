@@ -11,7 +11,7 @@ import os
 import numpy as np
 from torch.optim import SGD
 from torchvision import models
-from src.misc_functions import preprocess_image, recreate_image, save_image
+from src_1.misc_functions import preprocess_image, recreate_image, save_image
 
 
 class ClassSpecificImageGeneration():

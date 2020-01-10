@@ -3,11 +3,11 @@ Created on Thu Oct 23 11:27:15 2017
 @author: Utku Ozbulak - github.com/utkuozbulak
 """
 import numpy as np
-from src.misc_functions import (get_example_params,
-                            convert_to_grayscale,
-                            save_gradient_images)
-from src.gradcam import GradCam
-from src.guided_backprop import GuidedBackprop
+from src_1.misc_functions import (get_example_params,
+                                  convert_to_grayscale,
+                                  save_gradient_images)
+from src_1.gradcam import GradCam
+from src_1.guided_backprop import GuidedBackprop
 
 
 def guided_grad_cam(grad_cam_mask, guided_backprop_mask):

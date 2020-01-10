@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from backbone.my_model_irse import IR_50, Flatten
-from src.my_utils import load_pth_model, read_imgs, saliency_vis_square, postprocess
+from src_1.my_utils import load_pth_model, read_imgs, saliency_vis_square, postprocess
 
 
 def mid_feat_saliency_profile(backbone, imgs, device, mergeC=True):
