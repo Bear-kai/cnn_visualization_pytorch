@@ -18,6 +18,7 @@ This repository is built based on an open sourced github project and my own impl
 - buffer_model
 \
     Put pretrained model here -> resort to Nutstore
+    https://drive.cvte.com/p/DdtWGBwQveYBGJ7oAw
 - face_imgs
 \
     Some sample face images
