@@ -36,6 +36,10 @@ This repository is built based on an open sourced github project and my own impl
 - README.md
 \
     This readme file
+- 2-3_Visualization of DNN_xiongkai.pdf
+\
+    ExPaperReading slides of DNN_vis.
+    
 
 #### Notes of src_1
 All scripts prefixed with 'my_' are implemented or re-implemented by myself. The scripts can be grouped as follows: 
