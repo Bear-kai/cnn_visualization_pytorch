@@ -92,7 +92,7 @@ def collect_conv_weight_norm(model):
     return weight_dic, bias_dic, running_dic
 
 
-def draw_and_save(weight_dic, bias_dic, running_dic, name):
+def draw_and_save(weight_dic, bias_dic, running_dic, file_name):
     # --------------------------
     fig, axs = plt.subplots(2, 4, figsize=(12,6))
     axs[0,0].plot(weight_dic['conv_weight_norm'])
@@ -127,29 +127,23 @@ def draw_and_save(weight_dic, bias_dic, running_dic, name):
     axs[1,3].grid()
     axs[1,3].set_title('running_var')
 
-    # fig.suptitle('%s' % name)  # , fontsize=10, y=1.08   加上大标题会有重叠，调整不过来，放弃...
+    # fig.suptitle('%s' % name)  # , fontsize=10, y=1.08    overlap...
     plt.tight_layout()
-    plt.savefig('%s.jpg'%name)
-    # # --------------------------
-    # weight_keys = ['conv_weight_size', 'bn_weight_size', 'fc_weight_size']
-    # bias_keys = ['conv_bias_size', 'bn_bias_size', 'fc_bias_size']
-    # with open('%s.txt'%name, 'a') as file_txt:
-    #     file_txt.write('\n\n')
-    #     for i,key in enumerate(weight_keys):
-    #         # file_txt.write('===== %s ====='%(key) + '\n')
-    #         # for term in weight_dic[key]:
-    #         #     file_txt.write(str(term) + '\n')
-    #         # file_txt.write('===== %s =====' % bias_keys[i] + '\n')
-    #         # for term in bias_dic[bias_keys[i]]:
-    #         #     file_txt.write(str(term) + '\n')
-    #         if len(bias_dic[bias_keys[i]]):
-    #             file_txt.write('===== %s | %s =====' % (key, bias_keys[i]) + '\n')
-    #             for j,term in enumerate(weight_dic[key]):
-    #                 file_txt.write(str(term) + '\t' + str(bias_dic[bias_keys[i]][j]) + '\n')
-    #         else:
-    #             file_txt.write('===== %s | have no %s =====' % (key, bias_keys[i]) + '\n')
-    #             for term in weight_dic[key]:
-    #                 file_txt.write(str(term) + '\n')
+    plt.savefig('%s.jpg'%file_name)
+
+    weight_keys = ['conv_weight_size', 'bn_weight_size', 'fc_weight_size']
+    bias_keys = ['conv_bias_size', 'bn_bias_size', 'fc_bias_size']
+    with open('%s.txt'%file_name, 'a') as file_txt:
+        file_txt.write('\n\n')
+        for i,key in enumerate(weight_keys):
+            if len(bias_dic[bias_keys[i]]):
+                file_txt.write('===== %s | %s =====' % (key, bias_keys[i]) + '\n')
+                for j,term in enumerate(weight_dic[key]):
+                    file_txt.write(str(term) + '\t' + str(bias_dic[bias_keys[i]][j]) + '\n')
+            else:
+                file_txt.write('===== %s | have no %s =====' % (key, bias_keys[i]) + '\n')
+                for term in weight_dic[key]:
+                    file_txt.write(str(term) + '\n')
 
     return 0
 

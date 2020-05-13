@@ -1,6 +1,8 @@
 # Convolutional Neural Network Visualizations 
 
-This repository is built based on an open sourced github project and my own implementations. It has the following features:
+updated_202005: [Captum](https://captum.ai/) (“comprehension” in Latin) is an open source, extensible library for model interpretability built on PyTorch.
+
+updated_202001: This repository is built based on an open sourced github project and my own implementations. 
 * It implements several representative visualization algorithms, such as GradCAM and its variants.
 * Besides feature visualization, it also supports weight and norm statistics. 
 * It probably needs no change for standard models, and it is easy to do minor changes to adapt to your own model. 

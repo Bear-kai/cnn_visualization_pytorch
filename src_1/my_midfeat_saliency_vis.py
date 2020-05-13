@@ -125,7 +125,7 @@ def main_1():
 
     # define model
     backbone = IR_50(input_size=(112, 112), opt='E')
-    backbone, head = load_pth_model(checkpoint_path, backbone)
+    backbone, _ = load_pth_model(checkpoint_path, backbone)
     backbone = backbone.to(device)
 
     # prepare inputs
